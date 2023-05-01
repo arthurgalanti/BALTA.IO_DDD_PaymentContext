@@ -34,7 +34,12 @@ public class Student : Entity
                 hasSubscriptonActive = true;
             }
         }
-        if (hasSubscriptonActive)
-            AddNotification("Student.Subscriptions", "You already have an active subscription");
+        
+        AddNotifications(new Contract<Notification>()
+            .Requires()
+            .IsFalse(hasSubscriptonActive, "Student.Subscriptions","You already have an active subscription")
+            .AreNotEquals(0, subscription.Payments.Count, "Student.Subscription.Payments", "This subscription there isn't payments"));
+        // if (hasSubscriptonActive)
+        //     AddNotification("Student.Subscriptions", "You already have an active subscription");
     }
 }

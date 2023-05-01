@@ -9,6 +9,7 @@ C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\PaymentContext.Tests.runtimeconfig.json
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\PaymentContext.Tests.dll
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\PaymentContext.Tests.pdb
+C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\Flunt.dll
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -102,4 +103,3 @@ C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\obj\Debug
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\obj\Debug\net7.0\PaymentContext.Tests.pdb
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\obj\Debug\net7.0\PaymentContext.Tests.genruntimeconfig.cache
 C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\obj\Debug\net7.0\ref\PaymentContext.Tests.dll
-C:\dev\MyRepositories\BALTA.IO_DDD_PaymentContext\PaymentContext.Tests\bin\Debug\net7.0\Flunt.dll
