@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2xiSwfNGD1TYdTclUgc71p88/X/utyNtVzSMzZnc4h4YB13LqynHl92FLVBI0BZL6m3Hj/fEqF+bx45/N5ScjQ==",
+  "dgSpecHash": "DRjnS9L8r1EHeP20pHto0FtWhXXo3llQyTHm8Frwbt2S43v46/Uo5+jaadgb2NBCp4nMpVRVLXb8TVE1XNYKtA==",
   "success": true,
   "projectFilePath": "C:\\dev\\MyRepositories\\BALTA.IO_DDD_PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
