@@ -35,10 +35,10 @@ public class CreatePayPalSubscriptionCommand : Notifiable<Notification>, IComman
     {
         AddNotifications(new Contract<Notification>()
             .Requires()
-            .IsGreaterThan(name.FirstName, 3, "Name.FirstName", "FirstName should have at least 3 chars")
-            .IsLowerThan(name.FirstName, 40, "Name.FirstName", "FirstName should have no more than 40 chars")
-            .IsGreaterThan(name.LastName, 3, "Name.LastName", "LastName should have at least 3 chars")
-            .IsLowerThan(name.LastName, 40, "Name.LastName", "LastName should have no more than 40 chars")
+            .IsGreaterThan(name.FirstName, 3, "Cmd.Name.FirstName", "FirstName should have at least 3 chars")
+            .IsLowerThan(name.FirstName, 40, "Cmd.Name.FirstName", "FirstName should have no more than 40 chars")
+            .IsGreaterThan(name.LastName, 3, "Cmd.Name.LastName", "LastName should have at least 3 chars")
+            .IsLowerThan(name.LastName, 40, "Cmd.Name.LastName", "LastName should have no more than 40 chars")
         );
     }
 }
