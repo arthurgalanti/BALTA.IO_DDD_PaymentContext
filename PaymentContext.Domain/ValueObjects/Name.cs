@@ -14,8 +14,8 @@ public class Name : ValueObject
         AddNotifications(new Contract<Notification>()
             .Requires()
             .IsGreaterThan(FirstName, 3, "Name.FirstName", "FirstName should have at least 3 chars")
-            .IsGreaterThan(LastName, 3, "Name.LastName", "LastName should have at least 3 chars")
             .IsLowerThan(FirstName, 40, "Name.FirstName", "FirstName should have no more than 40 chars")
+            .IsGreaterThan(LastName, 3, "Name.LastName", "LastName should have at least 3 chars")
             .IsLowerThan(LastName, 40, "Name.LastName", "LastName should have no more than 40 chars")
         );
     }

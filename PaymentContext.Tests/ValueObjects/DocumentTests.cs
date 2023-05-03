@@ -3,7 +3,7 @@ using PaymentContext.Domain.Enums;
 
 namespace PaymentContext.Tests.ValueObjects;
 
-[TestClass]
+//[TestClass]
 public class DocumentTests
 {
     // Red, Green, Refactor

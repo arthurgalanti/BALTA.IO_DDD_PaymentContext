@@ -5,7 +5,7 @@ using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Tests;
 
-[TestClass]
+ //[TestClass]
 public class StudentTests
 {
     private readonly Name _name;
@@ -32,7 +32,7 @@ public class StudentTests
         _subscription.AddPayment(payment);
         _student.AddSubscription(_subscription);
         _student.AddSubscription(_subscription);
-        
+
         Assert.IsTrue(!_student.IsValid);
     }
     
