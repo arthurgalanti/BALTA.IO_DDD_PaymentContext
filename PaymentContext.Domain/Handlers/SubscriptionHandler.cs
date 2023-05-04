@@ -50,7 +50,7 @@ public class SubscriptionHandler :
         var address = new Address(command.Street, command.Number, command.Neighborhood, command.City, command.State, command.Country, command.ZipCode);
        
         // Gerar as Entidades
-        var student = new Student(name, document, email);
+        var student = new Student(name, document, email, address);
         var subscription = new Subscription(DateTime.Now.AddMonths(1));
         var payment = new BoletoPayment(command.PaidDate,
             command.ExpireDate,
@@ -75,7 +75,7 @@ public class SubscriptionHandler :
         _repository.CreateSubscription(student);
         
         // Enviar E-mail boas vindas
-        _emailService.Send(student.ToString(), student.Email.Address, "Bem vindo ao Galanti.dev", "Sua assinatura foi criada.");
+        _emailService.Send(student.Name.ToString(), student.Email.Address, "Bem vindo ao Galanti.dev", "Sua assinatura foi criada.");
         
         return new CommandResult(true, "Assinatura realizada com sucesso");
     }
@@ -98,13 +98,13 @@ public class SubscriptionHandler :
             AddNotification("Email", "Este E-mail já está em uso");
         
         // Gerar as VOs
-        var name = new Name(command.name.FirstName, command.name.LastName);
+        var name = new Name(command.Name.FirstName, command.Name.LastName);
         var document = new Document(command.Document, EDocumentType.CPF);
         var email = new Email(command.Email);
         var address = new Address(command.Street, command.Number, command.Neighborhood, command.City, command.State, command.Country, command.ZipCode);
        
         // Gerar as Entidades
-        var student = new Student(name, document, email);
+        var student = new Student(name, document, email, address);
         var subscription = new Subscription(DateTime.Now.AddMonths(1));
         var payment = new PaypalPayment(command.PaidDate,
             command.ExpireDate,
@@ -128,7 +128,7 @@ public class SubscriptionHandler :
         _repository.CreateSubscription(student);
         
         // Enviar E-mail boas vindas
-        _emailService.Send(student.ToString(), student.Email.Address, "Bem vindo ao Galanti.dev", "Sua assinatura foi criada.");
+        _emailService.Send(student.Name.ToString(), student.Email.Address, "Bem vindo ao Galanti.dev", "Sua assinatura foi criada.");
         
         return new CommandResult(true, "Assinatura realizada com sucesso");
     }
@@ -157,7 +157,7 @@ public class SubscriptionHandler :
         var address = new Address(command.Street, command.Number, command.Neighborhood, command.City, command.State, command.Country, command.ZipCode);
        
         // Gerar as Entidades
-        var student = new Student(name, document, email);
+        var student = new Student(name, document, email, address);
         var subscription = new Subscription(DateTime.Now.AddMonths(1));
         var payment = new CreditCardPayment(command.PaidDate,
             command.ExpireDate,
@@ -187,7 +187,7 @@ public class SubscriptionHandler :
         _repository.CreateSubscription(student);
         
         // Enviar E-mail boas vindas
-        _emailService.Send(student.ToString(), student.Email.Address, "Bem vindo ao Galanti.dev", "Sua assinatura foi criada.");
+        _emailService.Send(student.Name.ToString(), student.Email.Address, "Bem vindo ao Galanti.dev", "Sua assinatura foi criada.");
         
         return new CommandResult(true, "Assinatura realizada com sucesso");
     }

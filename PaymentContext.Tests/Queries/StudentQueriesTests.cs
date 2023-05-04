@@ -5,7 +5,7 @@ using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Tests.Queries;
 
-//[TestClass]
+[TestClass]
 public class StudentQueriesTests
 {
     private IList<Student> _students;
@@ -19,7 +19,8 @@ public class StudentQueriesTests
             _students.Add(new Student(
                 new Name("Aluno", $"Galanti{i}"),
                 new Document($"1111111111{i}", EDocumentType.CPF),
-                new Email($"{i}@galanti.dev")
+                new Email($"{i}@galanti.dev"),
+                new Address()
             ));
         }
     }
@@ -48,7 +49,7 @@ public class StudentQueriesTests
         var exp = StudentQueries.GetStudentInfo("11111111119");
         var studn = _students.AsQueryable().Where(exp).FirstOrDefault();
 
-        Assert.AreEqual("9@galanti.dev", studn.Email.Address);
+        Assert.AreEqual("9@galanti.dev", studn?.Email.Address);
     }
     
 }

@@ -9,11 +9,12 @@ public class Student : Entity
 {
     private IList<Subscription> _subscriptions;
     private bool _hasSubscriptonActive;
-    public Student(Name name, Document document, Email email)
+    public Student(Name name, Document document, Email email, Address address)
     {
         Name = name;
         Document = document;
         Email = email;
+        Address = address;
         _subscriptions = new List<Subscription>();
         
         AddNotifications(name, document, email);
@@ -22,7 +23,7 @@ public class Student : Entity
     public Name Name { get; private set; }
     public Document Document { get; private set; }
     public Email Email { get; private set; }
-    public Address Address { get; private set; }
+    public Address? Address { get; private set; }
     public IReadOnlyCollection<Subscription> Subscriptions => _subscriptions.ToArray();
 
     public void AddSubscription(Subscription subscription)

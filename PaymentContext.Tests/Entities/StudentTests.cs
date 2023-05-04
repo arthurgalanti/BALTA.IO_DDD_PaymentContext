@@ -5,7 +5,7 @@ using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Tests;
 
- //[TestClass]
+ [TestClass]
 public class StudentTests
 {
     private readonly Name _name;
@@ -21,7 +21,7 @@ public class StudentTests
         _document = new Document("30738814091", EDocumentType.CPF);
         _address = new Address("Rua das Flores", "235", "Vila Dionísio", "Batatais", "SP", "Brasil", "14025-710");
         _email = new Email("arthur.galanti@hotmail.com");
-        _student = new Student(_name, _document, _email);
+        _student = new Student(_name, _document, _email, _address);
         _subscription = new Subscription(null);
     }
 
